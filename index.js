@@ -15,7 +15,7 @@ const server = createServer((req, res) => {
     fs.readFile('index.html', function(err, data) {
       if(err) {
         res.writeHead(404, {'Content-Type': 'text/html'});
-        return res.end("404 Not Found");
+        return res.end("Something wrong with the internet");
       }
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
@@ -25,7 +25,7 @@ const server = createServer((req, res) => {
     fs.readFile('about.html', function(err, data) {
       if(err) {
         res.writeHead(404, {'Content-Type': 'text/html'});
-        return res.end("404 Not Found");
+        return res.end("Something wrong with the internet");
       }
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
@@ -35,7 +35,7 @@ const server = createServer((req, res) => {
     fs.readFile('contact-me.html', function(err, data) {
       if(err) {
         res.writeHead(404, {'Content-Type': 'text/html'});
-        return res.end("404 Not Found");
+        return res.end("Something wrong with the internet");
       }
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
@@ -45,7 +45,7 @@ const server = createServer((req, res) => {
     fs.readFile('404.html', function(err, data) {
       if(err) {
         res.writeHead(404, {'Content-Type': 'text/html'});
-        return res.end("404 Not Found");
+        return res.end("Something wrong with the internet");
       }
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
